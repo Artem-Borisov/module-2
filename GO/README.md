@@ -20,3 +20,5 @@ git diff --color-words # изменения подробно
 
 git checkout index.html # Восстановть файл
 git checkout .
+
+git push # отправить в репозиторий
