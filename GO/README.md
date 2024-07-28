@@ -10,7 +10,10 @@ git config --global init.defaultBranch main # Ветка по умолчанию
 
 git config --global core.autocrlf true
 
-git init
-git add index.html
-git add .
-git commit -m "сообщение"
+git init # инициалицая репозитория
+git add index.html # добавить файл
+git add . # добавить все файлы
+git commit -m "сообщение" # выгрузить
+git status
+git diff # посмотреть изменения
+git diff --color-words # изменения подробно
