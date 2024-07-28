@@ -22,3 +22,4 @@ git checkout index.html # Восстановть файл
 git checkout .
 
 git push # отправить в репозиторий
+git clone ссылка с гитхаба -в нужную папку- # восстановление файлов 
