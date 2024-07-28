@@ -17,3 +17,6 @@ git commit -m "сообщение" # выгрузить
 git status
 git diff # посмотреть изменения
 git diff --color-words # изменения подробно
+
+git checkout index.html # Восстановть файл
+git checkout .
