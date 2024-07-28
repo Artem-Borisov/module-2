@@ -1,0 +1,77 @@
+@font-face {
+    font-family: lato-regular;
+    src: local(lato-regular), local(lato), local("lato regular"),
+        url(../CRM-ShopOnline/fonts/lato-regular.woff2) format(woff2),
+        url(../CRM-ShopOnline/fonts/lato-regular.woff) format(woff);
+    font-weight: 400;
+    /*font-display: optional;
+    font-display: fallback;*/
+    font-display: swap;
+}
+
+@font-face {
+    font-family: lato-bold;
+    src: local(lato-bold), local("lato bold"),
+        url(../CRM-ShopOnline/fonts/lato-bold.woff2) format(woff2),
+        url(../CRM-ShopOnline/fonts/lato-bold.woff) format(woff);
+    font-weight: 700;
+}
+
+body {
+    font-family: lato-regular, sans-serif;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.mane-text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 130%;
+    color: #2d2d2d;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: #2d2d2d;
+}
+
+.back-button p:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    background-image: url("Vector.svg");
+    position: absolute;
+    left: -28px;
+    top: 2px;
+
+}
+
+.back-button p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #2d2d2d;
+    margin-top: 100px;
+    position: relative;
+    display: inline;
+    margin-left: 28px;
+}
+
+.autor {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: #000;
+    text-align: end;
+    display: inline;
+}
+
+.under {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

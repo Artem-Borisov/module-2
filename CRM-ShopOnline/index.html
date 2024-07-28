@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить товар</title>
+    <link rel="stylesheet" href="../CRM-ShopOnline/CSS/index.css">
+    <link rel="preload" href="../CRM-ShopOnline/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../CRM-ShopOnline/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+    <main class="main">
+        <section class="add-item">
+            <div class="container">
+                <h1 class="add-item__header">Добавить товар</h1>
+                <button type="button" class="add-item__close-button"></button>
+                <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="add-item__form"> 
+                    <fieldset class="add-item__form-card">
+                        <!--  <label class="add-item__name-space">Наименование
+                            <br><input type="text" name="name" required class="add-item__name"><br>
+                        </label>-->
+                        <!--Два варианта использования label - с id и без-->
+                        <label for="name" class="add-item__name-space">Наименование</label>
+                        <input type="text" name="name" id="name" class="add-item__name">
+                        <label for="category" class="add-item__name-space">Категория</label>
+                        <input type="text" name="category" id="category" class="add-item__category">
+                        <label for="units" class="add-item__name-space">Единицы измерения</label>
+                        <input type="text" name="units" id="units" class="add-item__units">
+                        <label class="add-item__name-space checkbox">Дисконт<br>
+                            <input type="checkbox" class="add-item__discount-checkbox"> 
+                        </label>
+                        <input type="text" name="discount" id="discount" disabled class="add-item__discount">
+                        <label for="description" class="add-item__name-space">Описание</label>
+                        <textarea rows="5" name="description" id="description" class="add-item__description"></textarea>
+                        <label for="amount" class="add-item__name-space">Количество</label>
+                        <input type="number" name="amount" id="amount" class="add-item__amount">
+                        <label for="coast" class="add-item__name-space">Цена</label>
+                        <input type="number" name="coast" id="coast" step="0.1"  class="add-item__coast">
+                        <!-- placeholder="В рублях" -->
+                        <!-- <br><input type="file" name="image" accept="image/*"><br>
+                        <br><button type="reset">Сброс</button> -->
+                    </fieldset>
+                    <button type="submit" class="add-item__submit-button">Добавить товар</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
